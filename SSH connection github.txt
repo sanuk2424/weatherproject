@@ -1,0 +1,14 @@
+ssh-keygen -t rsa -b 4096 -C "plunk.sanu@gmail.com"
+ls ~/.ssh
+
+eval $(ssh-agent -s)
+
+//Add private key in local system
+
+ssh-add ~/.ssh//id_rsa
+
+$ cat ~/.ssh/id_rsa.pub
+copy public key in github
+
+To check connection
+ssh -T git@github.com
